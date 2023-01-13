@@ -1,0 +1,57 @@
+body {
+    margin:0px;
+    padding:0px;
+    font: 14px 'Verdana';
+}
+ul {
+    list-style: none;
+    display: block;
+    margin:0px;
+    padding:0px;
+}
+ul:after {
+    display: block;
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.mmenuu > li {
+    float: left;
+    position: relative;
+}
+ul.mmenuu > li > a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: black;
+}
+ul.mmenuu > li > a:hover {
+    background-color: red;
+}
+ul.ssubmenuu {
+    position: absolute;
+    width: 240px;
+    top: 37px;
+    left:0px;
+    display: none;
+    background-color: white;
+}
+ul.ssubmenuu > li {
+    display: block;
+}
+ul.ssubmenuu > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: black;
+}
+ul.ssubmenuu > li > a:hover {
+    background-color: red;
+    text-decoration: underline;
+}
+ul.mmenuu > li:hover > ul.ssubmenuu {
+    display: block;
+}
+
